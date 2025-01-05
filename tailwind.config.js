@@ -5,7 +5,12 @@ module.exports = {
     "./public/index.html", // Include the HTML file
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        circleBold: ['CirceSlabBold', 'sans-serif'],
+        circle: ['Circe', 'sans-serif'],
+      }
+    },
   },
   plugins: [],
 };
