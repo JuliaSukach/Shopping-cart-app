@@ -35,13 +35,13 @@ const Cart = ({ toggleCart }) => {
                                     <div>{currency}{product.price * product.quantity}</div>
                                 </div>
                                 <div className="flex flex-row justify-center w-[100px] mt-10 ml-5">
-                                    <button disabled={product.quantity < 2} className="px-5 " onClick={() => dispatch(decreaseItem(product))}>
+                                    <button aria-label="Increase quantity" disabled={product.quantity < 2} className="px-5 " onClick={() => dispatch(decreaseItem(product))}>
                                         <svg className="text-current size-3" xmlns="http://www.w3.org/2000/svg" viewBox="71.6 10.1 6 1.4">
                                             <path className={product.quantity < 2 ? 'stroke-[#d7d5ce]' : 'stroke-[#000]'} xmlns="http://www.ws3.org/2000/svg" d="M75.2 10.2c1.9-.2 2.5-.2 2.5.3 0 .9-1.7.7-2.5.7l-2.9.2c-.3 0-.6-.1-.6-.3-.3-.5.2-.9.5-1 .8 0 1.5.2 3 0Z" ></path>
                                         </svg>
                                     </button>
                                     <span className="px-1">{product.quantity}</span>
-                                    <button className="px-5" onClick={() => dispatch(increaseItem(product))}>
+                                    <button aria-label="Decrease quantity" className="px-5" onClick={() => dispatch(increaseItem(product))}>
                                         <svg class="text-current size-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                             <path d="M6 11c-1 .4-2 .5-2.8.6-1.3.3-3 0-3-1C-.2 9 1 8.3 2.6 8c3.4-.5 4.9-1.2 4.9-5 0-.7-.2-3.1 1.2-3.1 1.1 0 1.5 1 1.5 3.8 0 2.7-.1 3 2.1 2.6l5.8-1c.9 0 1.7 0 1.7 1.2s-.5 1.6-1.4 1.8c-1.8.6-3.6.5-5.7 1-3 .6-3.6 1.3-3.6 4.4V18c0 1-.3 2-1.2 2-1.3 0-1.5-1.3-1.6-1.8-.3-2-.3-4.3-.4-7.1Zm0 0"></path>
                                         </svg>
