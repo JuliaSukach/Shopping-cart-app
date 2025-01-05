@@ -2,7 +2,7 @@ import ShoppingBasketOutlinedIcon from '@mui/icons-material/ShoppingBasketOutlin
 import Button from '@mui/material/Button'
 import { useSelector } from 'react-redux'
 
-const Navigation = () => {
+const Navigation = ({ toggleCart }) => {
     const numOfItems = useSelector(state => state.cart.numOfItems)
     return (
         <div className='flex flex-row justify-between mx-20 my-4'>
@@ -15,6 +15,7 @@ const Navigation = () => {
                 <Button color='black'
                     startIcon={<ShoppingBasketOutlinedIcon sx={{ color: 'black'}} />}
                     disableRipple
+                    onClick={toggleCart}
                 >
                     [{numOfItems}]
                 </Button>
