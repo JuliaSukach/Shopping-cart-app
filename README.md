@@ -39,7 +39,7 @@ Installation
 Follow these steps to set up the project locally:
 
 1.  ```
-      git clone https://github.com/your-username/Shopping-cart-app.git
+    git clone https://github.com/your-username/Shopping-cart-app.git
     ```
     
 2.  ```
@@ -54,7 +54,7 @@ Follow these steps to set up the project locally:
     npm start
     ```
     
-5.  **Open the app in your browser**:Visit http://localhost:3000 to view the app.
+5.  **Open the app in your browser**:Visit http://localhost:3000 to view the app.
 
 **Screenshots**
 <img width="1576" alt="demo1" src="https://github.com/user-attachments/assets/70609800-73e2-4d35-8d56-a47654115b22" />
